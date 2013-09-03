@@ -13,7 +13,7 @@ passwordVarName=login[password]
 #save cookies
 curl -s -c $cookiesFileName $host > /dev/null 2>&1
 #get csrf - maybe try something smarter than cut?
-csrf=$(curl -s -b $cookiesFilename $host | grep $csrfVarName'".*value=".*"' -o | cut -f3 -d"\"")
+csrf=$(curl -s -b $cookiesFilename $host | grep 'token]".*value=".*"' -o | cut -f3 -d"\"")
 #prepare POST data
 data=$(echo "$csrfVarName=$csrf&$loginVarName=$username&$passwordVarName=$password")
 #login
