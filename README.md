@@ -11,4 +11,8 @@ usage: ./csrf_login_check.sh
 output if logged in: OK  
 output if login failed: FAIL  
 
+snapchat.sh
+---
+downloads free stock photos from stocksnap.io with tags
+usage: ./stocksnap.sh
 
