@@ -14,5 +14,9 @@ output if login failed: FAIL
 snapchat.sh
 ---
 downloads free stock photos from stocksnap.io with tags
+
 usage: ./stocksnap.sh
 
+saveTemperature.sh
+---
+read temperature value from ds18b20 sensor and save it to javascript file
